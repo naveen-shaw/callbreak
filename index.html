@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>callbreak</title>
+</head>
+<body style="background-color: grey; font-weight: bold;">
+    <div class="container">
+        <center>
+            <table border="1" style="background-color: rgb(157, 156, 156);">
+                <thead>
+                    <td><input class="inp" type="text"></td>
+                    <td><input class="inp" type="text"></td>
+                    <td><input class="inp" type="text"></td>
+                    <td><input class="inp" type="text"></td>
+                </thead>
+                <thead class="total">
+                    <td id="th1">Total=0</td>
+                    <td id="th2">Total=0</td>
+                    <td id="th3">Total=0</td>
+                    <td id="th4">Total=0</td>
+                </thead>
+                <tr>
+                    <td><input id="t1r1" class="inp call" type="text"></td>
+                    <td><input id="t1r2" class="inp" type="text"></td>
+                    <td><input id="t1r3" class="inp" type="text"></td>
+                    <td><input id="t1r4" class="inp" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input id="t2r1" class="inp" type="text"></td>
+                    <td><input id="t2r2" class="inp" type="text"></td>
+                    <td><input id="t2r3" class="inp" type="text"></td>
+                    <td><input id="t2r4" class="inp" type="text"></td>
+                </tr>
+            </table>
+            <button class="cal" type="submit" onclick="calculate()">calculate</button>
+        </center>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

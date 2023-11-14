@@ -1,0 +1,31 @@
+function calculate()
+{
+    for(var i=1;i<=4;i++)
+    {
+        t_callid="t1r"+i
+        call=document.getElementById(t_callid).value
+        t_collid="t2r"+i
+        coll=document.getElementById(t_collid).value
+        if(call>coll)
+        {
+            th_id="th"+i
+            total_val=document.getElementById(th_id).innerText
+            total_val=parseInt(total_val.substring(6))
+            total_val+=parseInt(-10*call)
+            document.getElementById(th_id).innerHTML="Total="+total_val
+        }
+        else
+        {
+            th_id="th"+i
+            total_val=document.getElementById(th_id).innerText
+            total_val=parseInt(total_val.substring(6))
+            if(coll-call>2)
+                total_val+=parseInt(-10*call)
+            else
+                total_val+=parseInt(10*call)+parseInt(coll-call)
+            document.getElementById(th_id).innerHTML="Total="+total_val
+        }
+        document.getElementById(t_callid).value=null
+        document.getElementById(t_collid).value=null
+    }
+}

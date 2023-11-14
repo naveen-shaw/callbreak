@@ -1,0 +1,31 @@
+table
+{
+    /* border: 1px solid; */
+    margin-top: 8rem;
+    width: 50%;
+}
+tr
+{
+    height: 3rem;
+    padding: 0%;
+    text-align: center;
+}
+td
+{
+    border: none;
+}
+.inp
+{
+    height: 40px;
+    width: 96%;
+    border: none;
+}
+.cal
+{
+    margin-top: 3rem;
+    background-color: antiquewhite;
+    width: 50%;
+    height: 30px;
+    border: none;
+    font-size: large;
+}
